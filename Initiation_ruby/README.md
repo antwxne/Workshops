@@ -1,6 +1,10 @@
-# Workshop initiation au Ruby
+# Workshop initiation au Ruby ![](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
 
 ## Introduction
+
+>Ruby est un langage de programmation libre. Il est interprété, orienté objet et multi-paradigme. Le langage a été standardisé au Japon en 2011 (JIS X 3017:2011), et en 2012 par l'Organisation internationale de normalisation (ISO 30170:2012).
+>
+> Wikipedia
 
 ## Instalation
 
@@ -126,9 +130,7 @@ Toujours dans irb, essayez de faire une classe appellée `Dog` qui contient:
 
 ## Les scripts
 
-Le ruby est un langage de scripts
-
-< ajouter une description etc >
+Le ruby est un langage qui permet d'écrire des scripts.
 
 1) Créer un fichier `first_script`
 2) Dans ce fichier ecrire un script qui va lire un nombre donné par l'utilisateur et reverse ce nombre.
@@ -182,3 +184,12 @@ NGC 6888, also known as the Crescent Nebula, is a about 25 light-years across bl
 <p align="center">
   <img src=".resources/example.png">
 </p>
+
+## Contributors
+
+- Antoine Desruet [![github-link][github-logo]](https://github.com/antwxne)
+
+
+<!-- Markdown link & img definition's -->
+
+[Github-logo]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
