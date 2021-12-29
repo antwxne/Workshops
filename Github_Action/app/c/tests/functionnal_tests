@@ -1,0 +1,63 @@
+#!/usr/bin/bash
+
+#COLOR
+RESET="\e[0m"
+BLUE="\e[34m"
+RED="\e[91m"
+GREEN="\e[92m"
+MAGENTA="\e[95m"
+YELLOW="\e[93m"
+BOLD="\e[1m"
+UNDERLINE="\e[4m"
+
+
+if [ "$1" = "--ascii" ];
+then
+  RESET=""
+  BLUE=""
+  RED=""
+  GREEN=""
+  MAGENTA=""
+  YELLOW=""
+  BOLD=""
+  UNDERLINE=""
+fi
+
+total=0
+ok=0
+
+testing ()
+{
+    total=$(echo "$total+1" | bc -l)
+    local result="Test : $MAGENTA$1$RESET : "
+
+    ok=$(echo "$ok+1" | bc -l)
+    local result=$result$GREEN"OK"$RESET
+    echo -ne $result"\n"
+}
+
+
+display_result ()
+{
+    echo -e "\n"
+    echo -ne "${BOLD}${UNDERLINE}Tests results$RESET:\n[ Total: $BLUE"$total"$RESET | Passed: $GREEN"$ok"$RESET | Failed: $RED"$(echo "$total-$ok" | bc -l)"$RESET ]"
+    percent=$(echo "$ok*100/$total" | bc -l)
+    LC_NUMERIC="en_US.UTF-8" printf " ${BOLD}$YELLOW=>$RESET %.2f%%\n" $percent
+    percent=$(LC_NUMERIC="en_US.UTF-8" printf '%0.f\n' $percent)
+}
+
+testing "Test1"
+testing "Test1"
+testing "Test1"
+testing "Test1"
+testing "Test1"
+
+ok=1
+
+display_result
+
+if [ $percent -lt 80 ]
+then
+  exit 1
+fi
+exit 0

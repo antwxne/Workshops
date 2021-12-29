@@ -185,7 +185,7 @@ NGC 6888, also known as the Crescent Nebula, is a about 25 light-years across bl
   <img src=".resources/example.png">
 </p>
 
-## Contributors
+## Contributeurs
 
 - Antoine Desruet [![github-link][github-logo]](https://github.com/antwxne)
 
