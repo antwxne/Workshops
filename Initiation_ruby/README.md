@@ -90,7 +90,7 @@ Les classes sont faites de la façon suivante:
 
 class Nom # Nom de l'objet (doit commencer par une majuscule)
   def initialize()
-    # Constructer de l'objet
+    # Constructeur de l'objet
     @var #variable de l'objet
   end
 
