@@ -45,7 +45,7 @@ Dans le meme `run` que la partie précédente:
 - Créez un dossier `Plop`
 - Listez tous les fichiers du répertoire et placez l'output dans un fichier.
 - Déplacez ce fichier dans le dossier `Plop`.
-- Listez les fichiers dans situés dans `Plop`.
+- Listez les fichiers situés dans `Plop`.
 
 
 #### Autre chose que Linux pour lancer ses actions
@@ -58,7 +58,6 @@ Créez un nouveau fichier `.yml` dans `.github/workflows`
 Ce workflow devra avoir les caractéristiques suivantes:
 - S'appeller `Multi OS`
 - Se lance lors d'un push sur la branche `master`.
-- Ne pas se lancer si le commit contient `[skip ci]`.
 - A un `job` s'appelant `WinduntuOS`:
   - Se lançant sur les dernieres versions d'Ubuntu, Windows et MacOs.
   - affichant `Hello from < nom de l'os >` dans la console.
@@ -100,7 +99,7 @@ Dans le ficher `compilation.yml` créez un nouveau `Workflow` nommé `Compilatio
 
 Ce workflow devra:
 
-- Se lancer lors d'un `push` sur n'importe quelle branche. Et être ignoré lorsque le commit contient `[skip ci]`.
+- Se lancer lors d'un `push` sur n'importe quelle branche.
 - Se lancer lors d'une `pull request` sur la branche `master`.
 - Avoir un `jobs` nommé `Compilation`.
 - Se lancer sur `ubuntu_latest`.
