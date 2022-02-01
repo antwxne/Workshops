@@ -64,12 +64,12 @@ irb(main):001:0>
 
 Maintenant essayez de faire:
 
-* L'addition, la multiplication, la puissance et la racine carrée entre 3 et 5
+* L'addition, la multiplication, la puissance entre 3 et 5 et la racine carrée de 1764
 
 * Une fonction appellée `say_hello` qui prend une `string` en parametre et qui va afficher `Hello <str>` avec un retour
   a la ligne.
 
-* Une fonction appellée qui prend une `string` en parametre et qui va afficher `HELLO <str>` avec `str` en `majuscules`
+* Une fonction appellée `hello_str` qui prend une `string` en parametre et qui va afficher `HELLO <str>` avec `str` en `majuscules`
   suivit d'un retour a la ligne.
 
 * Une fonction appellée `say_hello_to_someone` qui va afficher :
